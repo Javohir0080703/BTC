@@ -4,11 +4,10 @@ import Home from './pages/Home'
 import MainLayout from './layouts/MainLayout'
 const App = () => {
   const [language, setLanguage] = useState("ru")
-
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route element={<MainLayout language={language} setLanguage={setLanguage} />}>
-        <Route path="/" element={<Home language={language} setLanguage={setLanguage}/>} />
+        <Route path="/" element={<Home language={language} setLanguage={setLanguage} />} />
       </Route>
     )
   )

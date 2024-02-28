@@ -5,8 +5,8 @@ import Footer from '../components/Footer'
 
 const MainLayout = ({language,setLanguage}) => {
   return (
-    <div className='flex flex-col min-h-screen bg-black'>
-      <Header language={language} setLanguage={setLanguage}/>
+    <div className='flex flex-col min-h-screen '>
+      <div className='bg-black'><Header language={language}  setLanguage={setLanguage}/></div>
       <main className='grow'>
         <Outlet />
       </main>
